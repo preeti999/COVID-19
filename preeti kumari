@@ -1,0 +1,135 @@
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+using namespace std;
+
+class carona
+{
+public:
+    void world_case();
+    void india_case();
+    void recover_world();
+    void recover_india();
+    void death_world();
+    void death_india();
+    void news();
+    void entertainment();
+};
+
+void carona :: world_case() {
+    cout << "Latest carona news in world = 1,519,442" <<endl;
+}
+
+void carona :: india_case() {
+    cout << "Latest carona news in world = 5,734"<<endl;
+}
+
+void carona :: recover_world() {
+    cout << "Latest carona news in world = 330,890"<<endl;
+}
+
+void carona :: recover_india() {
+    cout << "Latest carona news in world = 473" <<endl;
+}
+
+void carona :: death_world() {
+    cout << "Latest carona news in world = 88,543" <<endl;
+}
+void carona :: death_india() {
+    cout << "Latest carona news in world = 166"<<endl;
+}
+void carona :: news() {
+    cout << "WORK IN PROGESS";
+}
+void carona :: entertainment() {
+    cout << "WORK IN PROGESS" <<endl;
+}
+
+
+
+
+int main()
+{
+    carona obj;
+    int ch;
+    do
+    {
+    cout<< "\n1) TOTAL CASE OF CARONA VIRUS IN WORLD" <<endl;
+    cout<< "2) TOTAL CASE OF CARONA VIRUS IN INDIA" <<endl;
+    cout<< "3) RECOVER CASE OF CARONA VIRUS IN WORLD" <<endl;
+    cout<< "4) DEATH CASE OF CARONA VIRUS IN WORLD" <<endl;
+    cout<< "5) RECOVER CASE OF CARONA VIRUS IN INDIA" <<endl;
+    cout<< "6) DEATH CASE OF CARONA VIRUS IN INDIA" <<endl;
+    cout<< "7) LATEST NEWS RELATED TO CARONA VIRUS" <<endl;
+    cout<< "8) EXIT" << endl;
+
+    cin >> ch;
+    switch(ch)
+    {
+     case 1:
+
+         cout <<" TOTAL CASE OF CARONA VIRUS IN WORLD " << endl;
+     obj.world_case();
+     break;
+
+     case 2:
+         cout <<" TOTAL CASE OF CARONA VIRUS IN INDIA" <<endl;
+     obj.india_case();
+     break;
+
+     case 3:
+         cout << " TOTAL RECOVER CASE OF CARONA VIRUS IN WORLD"<< endl;
+     obj.recover_world();
+     break;
+
+     case 4:
+         cout <<" TOTAL RECOVER CASE OF CARONA VIRUS IN INDIA" << endl;
+     obj.recover_india();
+     break;
+
+    case 5:
+        cout <<" TOTAL DEATH CASES OF CARONA VIRUS IN WORLD" << endl;
+     obj.death_world();
+     break;
+
+     case 6:
+         cout <<" TOTAL DEATH CASES OF CARONA VIRUS IN INDIA" << endl;
+     obj.death_india();
+     break;
+
+     case 7:
+         cout <<" LATEST NEWS RELATED TO CARONA VIRUS" << endl;
+
+     obj.news();
+     break;
+
+     case 8:
+        if(ch == 8){
+            //exit(1);
+            break;
+        }
+     case 9:
+        if(ch==9)
+        {
+            break;
+        }
+     default:
+        cout << "this is not exits try again" <<endl;
+
+    }
+    int x;
+    cout << "\ndo you want to continue press any key" <<endl;
+    cout<< "for EXIT press N" <<endl;
+
+
+    x= getch();
+
+    if( x == 'n' || x == 'N')
+        //exit(0);
+        break;
+
+    }
+    while(true);
+
+    return 0;
+}
